@@ -49,7 +49,7 @@ class _PokePokedexState extends State<PokePokedex> {
   final List<Pokemon> _pokemons = [];
   bool _isLoading = false;
   int _offset = 0;
-  final int _limit = 20;
+  final int _limit = 10;
 
   @override
   void initState() {
