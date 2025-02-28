@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/design/colors.dart';
 import 'package:pokedex/design/fonts.dart';
+import 'package:pokedex/design/radius.dart';
 
 class PokeThemes {
   PokeThemes._();
@@ -10,9 +11,9 @@ class PokeThemes {
 
     // TEXT THEME
     textTheme: const TextTheme(
-      bodyLarge: TextStyle(fontSize: PokeFonts.bodyLarge),
-      bodyMedium: TextStyle(fontSize: PokeFonts.bodyMedium),
-      bodySmall: TextStyle(fontSize: PokeFonts.bodySmall),
+      bodyLarge: TextStyle(fontSize: PokeFonts.bodyLarge, fontWeight: FontWeight.bold),
+      bodyMedium: TextStyle(fontSize: PokeFonts.bodyMedium, fontWeight: FontWeight.bold),
+      bodySmall: TextStyle(fontSize: PokeFonts.bodySmall, fontWeight: FontWeight.bold),
       titleLarge: TextStyle(
         fontSize: PokeFonts.titleLarge,
         fontWeight: FontWeight.bold,
@@ -48,10 +49,34 @@ class PokeThemes {
     // BUTTON THEME
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
+        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(PokeRadius.medium),
+          ),
+        ),
+        backgroundColor: WidgetStateProperty.all<Color>(PokeColors.lightColor),
+        foregroundColor: WidgetStateProperty.all<Color>(PokeColors.colorBorder),
+        textStyle: WidgetStateProperty.all<TextStyle>(TextStyle(fontSize: PokeFonts.bodyMedium),
+        ),
+      ),
+    ),  
+  );
+
+  static ThemeData widgetsTheme = ThemeData(
+    // BUTTON THEME
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ButtonStyle(
+        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(PokeRadius.medium),
+          ),
+        ),
         backgroundColor: WidgetStateProperty.all<Color>(PokeColors.lightColor),
         foregroundColor: WidgetStateProperty.all<Color>(PokeColors.colorBorder),
         textStyle: WidgetStateProperty.all<TextStyle>(
-          TextStyle(fontSize: PokeFonts.bodyMedium),
+          TextStyle(fontSize: PokeFonts.bodyLarge,
+                    fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     ),  

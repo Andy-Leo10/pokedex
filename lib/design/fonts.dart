@@ -2,7 +2,7 @@
 
 class PokeFonts {
   PokeFonts._();
-  static const double bodyLarge = 20.0;
+  static const double bodyLarge = 28.0;
   static const double bodyMedium = 16.0;
   static const double bodySmall = 10.0;
   static const double titleLarge = 32.0;
