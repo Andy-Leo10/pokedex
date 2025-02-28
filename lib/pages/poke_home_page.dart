@@ -6,11 +6,6 @@ import 'package:pokedex/configs/routes.dart';
 // widgets
 import 'package:pokedex/widgets/poke_button.dart';
 import 'package:pokedex/widgets/poke_tile.dart';
-// for pokeapi
-import 'dart:convert';
-import 'package:http/http.dart' as http;
-// models
-import 'package:pokedex/models/pokemon.dart';
 
 class PokeHomePage extends StatelessWidget {
   const PokeHomePage({super.key, required this.title});

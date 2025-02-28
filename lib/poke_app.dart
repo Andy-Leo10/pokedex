@@ -19,7 +19,7 @@ class PokeApp extends StatelessWidget {
       theme: PokeThemes.defaultTheme,
       routes: {
         PokeRoutes.home: (context) => const PokeHomePage(title: 'Home Page'),
-        PokeRoutes.pokedex: (context) => const PokePokedex(title: 'Pokedex'),
+        PokeRoutes.pokedex: (context) => PokePokedex(title: 'Pokedex'),
         PokeRoutes.tableTypes: (context) => const PokeTableTypes(title: 'Table of Types'),
         PokeRoutes.movements: (context) => const PokeMovements(title: 'Movements'),
         PokeRoutes.berries: (context) => const PokeBerries(title: 'Berries'),
