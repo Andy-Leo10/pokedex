@@ -49,7 +49,6 @@ class PokeHomePage extends StatelessWidget {
                     title: 'Pokedex',
                     onPressed: () {
                       print('Pokedex pressed');
-                      // open the pokedex page
                       Navigator.pushNamed(context, PokeRoutes.pokedex);
                     },
                   ),
@@ -57,18 +56,21 @@ class PokeHomePage extends StatelessWidget {
                     title: 'Table of Types',
                     onPressed: () {
                       print('Table of Types pressed');
+                      Navigator.pushNamed(context, PokeRoutes.tableTypes);
                     },
                   ),
                   PokeTile(
                     title: 'Movements',
                     onPressed: () {
                       print('Movements pressed');
+                      Navigator.pushNamed(context, PokeRoutes.movements);
                     },
                   ),
                   PokeTile(
                     title: 'Berries',
                     onPressed: () {
                       print('Berries pressed');
+                      Navigator.pushNamed(context, PokeRoutes.berries);
                     },
                   ),
                 ],

@@ -4,6 +4,9 @@ import 'package:pokedex/design/themes.dart';
 import 'package:pokedex/configs/routes.dart';
 import 'package:pokedex/pages/poke_home_page.dart';
 import 'package:pokedex/pages/poke_pokedex.dart';
+import 'package:pokedex/pages/poke_table_types.dart';
+import 'package:pokedex/pages/poke_movements.dart';
+import 'package:pokedex/pages/poke_berries.dart';
 
 class PokeApp extends StatelessWidget {
   const PokeApp({super.key});
@@ -16,10 +19,10 @@ class PokeApp extends StatelessWidget {
       theme: PokeThemes.defaultTheme,
       routes: {
         PokeRoutes.home: (context) => const PokeHomePage(title: 'Home Page'),
-        // PokeRoutes.pokedex: (context) => PokePokedex(),
-        // PokeRoutes.tableTypes: (context) => const PokeTableTypes(title: 'Table of Types'),
-        // PokeRoutes.movements: (context) => const PokeMovements(title: 'Movements'),
-        // PokeRoutes.berries: (context) => const PokeBerries(title: 'Berries'),
+        PokeRoutes.pokedex: (context) => const PokePokedex(title: 'Pokedex'),
+        PokeRoutes.tableTypes: (context) => const PokeTableTypes(title: 'Table of Types'),
+        PokeRoutes.movements: (context) => const PokeMovements(title: 'Movements'),
+        PokeRoutes.berries: (context) => const PokeBerries(title: 'Berries'),
       },
     );
   }

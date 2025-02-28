@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class PokePokedex extends StatelessWidget {
-  const PokePokedex({super.key, required this.title});
+class PokeBerries extends StatelessWidget {
+  const PokeBerries({super.key, required this.title});
 
   final String title;
 
@@ -12,7 +12,7 @@ class PokePokedex extends StatelessWidget {
         title: Text(title),
       ),
       body: Center(
-        child: Text('Welcome to 1'),
+        child: Text('Welcome to 4'),
       ),
     );
   }
